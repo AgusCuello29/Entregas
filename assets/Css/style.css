@@ -1,0 +1,246 @@
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*Menu de navegacion*/
+.menu {
+    background-color: #dcd4c4;
+}
+
+/*fondo principal, se repite en index y proyectos*/
+.boxprincipal {
+    position: relative;
+    background-image: url(../Img/enhanced_45456.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+
+.contenidoprincipal {
+    position: absolute;
+    top:40%;
+    left: 50px;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+
+/*titulos, se repite en todos los html*/
+.encabezado {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    font-family: "Monterrat", sans-serif;
+}
+
+.cita {
+    font-style: italic;
+}
+
+
+/*INFO PRINCIPAL*/
+
+/* Sección caracteristicas principales*/
+.especialidades {
+    background-color: #9f907443;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* bloques */
+.box-especialidades {
+    flex: 1;
+    min-width: 260px; 
+    text-align: center;
+}
+
+/* Iconos */
+.box-iconos {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    margin: 0 auto 20px;
+    
+}
+
+
+/* Título */
+.box-especialidades h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Texto */
+.box-especialidades p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.card-img-top {
+    height: 250px; 
+    object-fit: cover;
+    width: 100%;  
+}
+
+.card-body h2 {
+    font-size: 25px;
+}
+
+.card {
+    border: none;
+}
+
+.card .display-5 {
+    font-size: 25px;
+}
+
+
+
+/*SECCION DE NOSOTROS*/
+
+
+/*SECCION CONTACTO*/
+.boxcontacto {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c0c0c0e;
+}
+
+
+/*SECCION DEL FOOTER*/
+.caja-footer {
+    background-color: #9f907461;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;;
+}
+
+.logodelfooter {
+    font-size: 2em;
+    color: #000000ea;
+}
+
+
+/*COMPONENETES*/
+.botonprincipal {
+    text-decoration: none ;
+    background-color:#9f9074e1 ;
+    border: #ffffff solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.cajabotones { 
+    margin: 20px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #bba88661;
+}
+
+.btn-primary {
+    background-color: #9f907461;
+    border: #000000 solid 1px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgba(182, 178, 90, 0.732);
+    color: #000000;
+    border: #000000 solid 1px;
+}
+
+
+
+
+
+
+
+/* ===== NAVBAR FIX ===== */
+
+.logo p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo span {
+    font-weight: 800;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    color: rgba(182, 178, 90, 0.732);
+}
+
+/*menu hamburguesa*/
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+
+
+/*Media queries*/
+
+/* Movil */
+@media (max-width: 768px) {
+    .navbar .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo p {
+        font-size: 1.5rem;
+    }
+
+    .navbar-collapse {
+        background: #dcd4c4; 
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        gap: 5px;
+    }
+}
