@@ -8,9 +8,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/*Menu de navegacion*/
+/*menu de navegacion*/
 .menu {
     background-color: #dcd4c4;
+}
+
+/* barra de navegacion*/
+.logo p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo span {
+    font-weight: 800;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    color: rgba(182, 178, 90, 0.732);
+}
+
+/*hamburguesa*/
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /*fondo principal, se repite en index y proyectos*/
@@ -29,7 +64,6 @@
     font-size: 3em;
     color: rgb(255, 255, 255);
     text-align: center;
-
 }
 
 
@@ -46,9 +80,9 @@
 }
 
 
-/*INFO PRINCIPAL*/
+/*info principal*/
 
-/* Sección caracteristicas principales*/
+/*Sección caracteristicas principales*/
 .especialidades {
     background-color: #9f907443;
     padding: 30px 20px;
@@ -59,14 +93,14 @@
     flex-wrap: wrap;
 }
 
-/* bloques */
+/*bloques*/
 .box-especialidades {
     flex: 1;
     min-width: 260px; 
     text-align: center;
 }
 
-/* Iconos */
+/*iconos*/
 .box-iconos {
     width: 60px;
     height: 60px;
@@ -76,7 +110,7 @@
 }
 
 
-/* Título */
+/*título*/
 .box-especialidades h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -84,7 +118,7 @@
     color: #000000;
 }
 
-/* Texto */
+/*texto*/
 .box-especialidades p {
     color: #000000;
     font-size: 15px;
@@ -109,20 +143,14 @@
     font-size: 25px;
 }
 
-
-
-/*SECCION DE NOSOTROS*/
-
-
-/*SECCION CONTACTO*/
+/*seccion contacto*/
 .boxcontacto {
     text-align: center;
     padding: 20px;
     background-color: #0c0c0c0e;
 }
 
-
-/*SECCION DEL FOOTER*/
+/*seccion footer*/
 .caja-footer {
     background-color: #9f907461;
     padding: 5px;
@@ -140,7 +168,7 @@ ul {
 }
 
 
-/*COMPONENETES*/
+/*componentes*/
 .botonprincipal {
     text-decoration: none ;
     background-color:#9f9074e1 ;
@@ -149,8 +177,7 @@ ul {
     padding: 10px;
     color: #ffffff;
     font-size: 20px;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
 
 .cajabotones { 
@@ -175,54 +202,10 @@ ul {
 }
 
 
-
-
-
-
-
-/* ===== NAVBAR FIX ===== */
-
-.logo p {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-}
-
-.logo span {
-    font-weight: 800;
-}
-
-.navbar {
-    padding: 1rem;
-}
-
-.navbar-nav {
-    margin-left: auto;
-}
-
-.nav-link:hover {
-    color: rgba(182, 178, 90, 0.732);
-}
-
-/*menu hamburguesa*/
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-
-
-
 /*Media queries*/
 
 /* Movil */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .navbar .container-fluid {
         display: flex;
         justify-content: space-between;
