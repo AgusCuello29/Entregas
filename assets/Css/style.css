@@ -13,7 +13,6 @@
     background-color: #dcd4c4;
 }
 
-/* barra de navegacion*/
 .logo p {
     margin: 0;
     font-size: 2rem;
@@ -27,6 +26,7 @@
     font-weight: 800;
 }
 
+/* barra de navegacion*/
 .navbar {
     padding: 10px;
 }
@@ -40,10 +40,6 @@
 }
 
 /*hamburguesa*/
-.navbar-toggler {
-    border: none;
-}
-
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -54,9 +50,10 @@
     background-image: url(../Img/enhanced_45456.png);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 90vh;
 }
 
+/*texto principal, se repite en index y proyectos*/
 .contenidoprincipal {
     position: absolute;
     top:40%;
@@ -65,7 +62,6 @@
     color: rgb(255, 255, 255);
     text-align: center;
 }
-
 
 /*titulos, se repite en todos los html*/
 .encabezado {
@@ -82,21 +78,19 @@
 
 /*info principal*/
 
-/*Sección caracteristicas principales*/
+/*Sección especialidades principales*/
 .especialidades {
     background-color: #9f907443;
     padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-/*bloques*/
+/*bloques de especialidades*/
 .box-especialidades {
     flex: 1;
-    min-width: 260px; 
+    min-width: 250px; 
     text-align: center;
 }
 
@@ -105,12 +99,10 @@
     width: 60px;
     height: 60px;
     font-size: 40px;
-    margin: 0 auto 20px;
-    
+    margin: 0 auto 20px;  
 }
 
-
-/*título*/
+/*título especialidades*/
 .box-especialidades h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -118,13 +110,13 @@
     color: #000000;
 }
 
-/*texto*/
+/*texto especialidades*/
 .box-especialidades p {
     color: #000000;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 15px;  
 }
 
+/*tarjetas informaticas*/
 .card-img-top {
     height: 250px; 
     object-fit: cover;
@@ -147,7 +139,7 @@
     font-size: 40px;
 }
 
-/*seccion contacto*/
+/*seccion contacto, formulario*/
 .boxcontacto {
     text-align: center;
     padding: 20px;
@@ -158,8 +150,8 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    background-color: #d6d0c5;
-    padding: 10px;
+    background-color: #dcd4c4;
+    padding: 20px;
     align-items: center;              
     justify-items: center;            
 }
@@ -171,10 +163,6 @@
 
 .footer p {
     max-width: 300px;
-}
-
-.texto-footer .contacto-footer {
-    text-align: center;
 }
 
 /*grilla icono*/
@@ -210,12 +198,6 @@
     border: #000000 solid 1px;
 }
 
-.btn:active {
-    transform: scale(0.95);
-    background-color: rgb(0, 229, 38);
-}
-
-
 /*Media queries*/
 
 /* Movil */
@@ -227,18 +209,16 @@
     }
 
     .logo p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .navbar-collapse {
         background: #dcd4c4; 
-        padding: 1rem;
+        padding: 10px;
     }
 
     .navbar-nav {
-        width: 100%;
         text-align: center;
-        gap: 5px;
     }
 }
 
