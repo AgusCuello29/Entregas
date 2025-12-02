@@ -1,0 +1,47 @@
+@use "../base/variables";
+@use "../utilities/mixins";
+@use "sass:map";
+@use "../utilities/maps";
+@use "../utilities/extend";
+
+
+/*Boton principal*/
+.boton-gral {
+    @include mixins.botones;
+    color: map.get(maps.$colores-botones, color-boton-principal);
+    border: solid 2px variables.$blanco;
+    padding: 10px 15px;
+    
+    &:hover {
+        @extend %efecto-hover-base;
+        background-color: map.get(maps.$colores-botones, boton-principal-hover);
+        color: map.get(maps.$colores-botones, color-boton-principal);
+    }
+}
+
+/*Botones generales*/
+.cajabotones {
+    justify-items:center;
+    margin: 20px;
+}
+
+.btn-primary {
+    color: variables.$negro;
+    background-color: map.get(maps.$colores-botones, base);
+    border: variables.$negro solid 1px;
+    border-radius: 10px;
+
+    &:hover {
+        @extend %efecto-hover-base;
+        background-color: map.get(maps.$colores-botones, hover);
+        color: variables.$negro;
+        border: variables.$negro solid 1px;
+        
+    }
+}
+
+
+
+
+
+

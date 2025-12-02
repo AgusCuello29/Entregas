@@ -1,230 +1,280 @@
-/*General*/
+@charset "UTF-8";
+/*tipografia*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*Fuente principal*/
+/*color tipografia*/
+/*paleta de colores*/
+/*reset gral*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*estilos gral*/
+.encabezado {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.encabezado h1 {
+  font-weight: bold;
+}
 
+.cita {
+  font-style: italic;
+}
 
-/*menu de navegacion*/
+/*Iconos footer*/
+/*componentes*/
+.boton-gral:hover, .btn-primary:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.03);
+  box-shadow: 0 5px 5px #11120D;
+}
+
+/*Boton principal*/
+.boton-gral {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  background-color: rgba(168, 163, 131, 0.645);
+  color: rgb(255, 255, 255);
+  border: solid 2px #fffBF4;
+  padding: 10px 15px;
+}
+.boton-gral:hover {
+  background-color: rgba(161, 149, 68, 0.645);
+  color: rgb(255, 255, 255);
+}
+
+/*Botones generales*/
+.cajabotones {
+  justify-items: center;
+  margin: 20px;
+}
+
+.btn-primary {
+  color: #11120D;
+  background-color: rgba(158, 126, 69, 0.3803921569);
+  border: #11120D solid 1px;
+  border-radius: 10px;
+}
+.btn-primary:hover {
+  background-color: rgba(148, 146, 103, 0.732);
+  color: #11120D;
+  border: #11120D solid 1px;
+}
+
+/*header*/
 .menu {
-    background-color: #dcd4c4;
+  font-family: "Montserrat", sans-serif;
+  background-color: #bcad75;
 }
-
-.logo p {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+.menu .logo {
+  color: #11120D;
 }
-
-.logo span {
-    font-weight: 800;
+.menu .logo p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.menu .logo span {
+  font-weight: 800;
 }
 
 /* barra de navegacion*/
 .navbar {
-    padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
 }
-
-.navbar-nav {
-    margin-left: auto;
+.navbar .navbar-nav {
+  margin-left: auto;
 }
-
-.nav-link:hover {
-    color: rgba(182, 178, 90, 0.732);
+.navbar .nav-link:hover {
+  color: rgb(231, 223, 100);
 }
 
 /*hamburguesa*/
+.navbar-toggler {
+  border: none;
+}
 .navbar-toggler:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
+/*INDEX*/
 /*fondo principal, se repite en index y proyectos*/
 .boxprincipal {
-    position: relative;
-    background-image: url(../Img/enhanced_45456.png);
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
+  position: relative;
+  background-image: url(../Img/enhanced_45456.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  /*texto principal, se repite en index y proyectos*/
+}
+.boxprincipal .contenidoprincipal {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+  font-size: 3em;
+  color: #fffBF4;
+  text-align: center;
+  font-weight: bold;
 }
 
-/*texto principal, se repite en index y proyectos*/
-.contenidoprincipal {
-    position: absolute;
-    top:40%;
-    left: 50px;
-    font-size: 3em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-/*titulos, se repite en todos los html*/
-.encabezado {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px;
-    font-family: "Monterrat", sans-serif;
-}
-
-.cita {
-    font-style: italic;
-}
-
-
-/*info principal*/
-
-/*Sección especialidades principales*/
+/*INDEX*/
+/*Seccion de especialidades principales*/
 .especialidades {
-    background-color: #9f907443;
-    padding: 30px 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(164, 128, 60, 0.262745098);
+  padding: 30px 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /*bloques de especialidades*/
+}
+.especialidades .box-especialidades {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  /*título especialidades*/
+}
+.especialidades .box-especialidades h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #11120D;
+}
+.especialidades .box-especialidades {
+  /*texto especialidades*/
+}
+.especialidades .box-especialidades p {
+  color: #11120D;
+  font-size: 15px;
+}
+.especialidades .box-especialidades {
+  /*iconos especialidades*/
+}
+.especialidades .box-especialidades .box-iconos {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  margin: 0 auto 20px;
 }
 
-/*bloques de especialidades*/
-.box-especialidades {
-    flex: 1;
-    min-width: 250px; 
-    text-align: center;
-}
-
-/*iconos*/
-.box-iconos {
-    width: 60px;
-    height: 60px;
-    font-size: 40px;
-    margin: 0 auto 20px;  
-}
-
-/*título especialidades*/
-.box-especialidades h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    color: #000000;
-}
-
-/*texto especialidades*/
-.box-especialidades p {
-    color: #000000;
-    font-size: 15px;  
-}
-
-/*tarjetas informaticas*/
-.card-img-top {
-    height: 250px; 
-    object-fit: cover;
-    width: 100%;  
-}
-
-.card-body h2 {
-    font-size: 25px;
-}
-
+/*INDEX-SERVICIOS*/
+/*Cards informaticas*/
 .card {
-    border: none;
+  border: none;
+  overflow: hidden;
 }
-
+.card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+.card .card-body h2 {
+  font-size: 30px;
+}
 .card .display-5 {
-    font-size: 25px;
+  font-size: 30px;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
-.titulo-casa {
-    font-size: 40px;
+/*SECCION PROYECTOS*/
+/*Titulo proyectos*/
+.proyectos .titulo-casa {
+  font-size: 30px;
 }
 
-/*seccion contacto, formulario*/
+/*imagen proyectos*/
+.img-uniforme {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*CONTACTO*/
+/*formulario*/
 .boxcontacto {
-    text-align: center;
-    padding: 20px;
-    background-color: #0c0c0c0e;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(164, 128, 60, 0.262745098);
+  margin-bottom: 25px;
 }
 
 /*seccion footer*/
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    background-color: #dcd4c4;
-    padding: 20px;
-    align-items: center;              
-    justify-items: center;            
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #bcad75;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
 }
-
 .footer h2 {
-    margin-bottom: 15px;
-    font-size: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-
 .footer p {
-    max-width: 300px;
+  max-width: 300px;
 }
-
-/*grilla icono*/
-.contacto-footer ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    justify-items: center;
+.footer {
+  /*grilla icono*/
 }
-
-/*componentes*/
-.cajabotones {
-    justify-items: center;
-    margin: 20px;
-}
-
-.btn {
-    background-color: #bba88661;
-}
-
-.btn-primary {
-    background-color: #9f907461;
-    border: #000000 solid 1px;
-    border-radius: 20px;
-}
-
-.btn:hover {
-    background-color: rgba(182, 178, 90, 0.732);
-    color: #000000;
-    border: #000000 solid 1px;
+.footer .contacto-footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  justify-items: center;
 }
 
 /*Media queries*/
-
 /* Movil */
 @media (max-width: 576px) {
-    .navbar .container-fluid {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo p {
-        font-size: 1.6rem;
-    }
-
-    .navbar-collapse {
-        background: #dcd4c4; 
-        padding: 10px;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-collapse {
+    background: #bcad75;
+    padding: 10px;
+  }
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+  .navbar .logo p {
+    font-size: 1.5rem;
+  }
+  .img-uniforme {
+    width: 100%;
+    height: 100%;
+  }
+  .card-body {
+    text-align: center;
+  }
 }
 
-@media (max-width: 576px) {
-    .footer {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+@use "../base/variables";
+
+
+/*Media queries*/
+
+/* Movil */
+@media (max-width: 576px) {
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .navbar {
+        .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        } 
+        .navbar-collapse {
+        background: variables.$color-principal; 
+        padding: 10px;
+        }
+
+        .navbar-nav {
+        text-align: center;
+        }  
+        
+        .logo p {
+            font-size: 1.5rem;       
+        }
+    }
+
+    .img-uniforme {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+

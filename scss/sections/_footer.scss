@@ -1,0 +1,35 @@
+@use "../base/variables";
+@use "../utilities/mixins";
+
+
+/*seccion footer*/
+.footer {
+    font-family: variables.$fuente-principal;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    background-color: variables.$color-principal;
+    padding: 20px;
+    text-align: center;
+    align-items: center;              
+    justify-items: center;            
+
+    h2 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    }
+
+    p {
+    max-width: 300px;
+    }
+
+    /*grilla icono*/
+    .contacto-footer {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            @include mixins.grilla-de-iconos-footer();
+    }   
+}
+}

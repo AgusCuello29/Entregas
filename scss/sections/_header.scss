@@ -1,0 +1,43 @@
+@use "../base/variables";
+
+
+/*header*/
+.menu {
+    font-family: variables.$fuente-principal;
+    background-color: variables.$color-principal;
+    .logo{
+        color: variables.$negro;
+        p {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+        span {
+            font-weight: 800;
+        }
+    }
+}
+
+/* barra de navegacion*/
+.navbar {
+    font-family: variables.$fuente-principal;
+    padding: 10px;
+        .navbar-nav{
+            margin-left: auto;}
+        .nav-link{
+            &:hover {
+                color: variables.$color-secundario-hover;
+            }
+        }
+}
+
+/*hamburguesa*/
+.navbar-toggler {
+    border: none;
+    &:focus {
+    box-shadow: none;}
+    }
+

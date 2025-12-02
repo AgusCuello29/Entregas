@@ -1,0 +1,112 @@
+@use "../base/variables";
+@use "sass:map";
+@use "../utilities/maps";
+
+
+/*INDEX*/
+/*fondo principal, se repite en index y proyectos*/
+.boxprincipal {
+    position: relative;
+    background-image: url(../Img/enhanced_45456.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+
+/*texto principal, se repite en index y proyectos*/
+    .contenidoprincipal {
+        position: absolute;
+        top:40%;
+        left: 50px;
+        font-size: 3em;
+        color: variables.$blanco;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+/*INDEX*/
+/*Seccion de especialidades principales*/
+.especialidades {
+    font-family: variables.$fuente-principal;
+    background-color: variables.$color-terciario;
+    padding: 30px 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+/*bloques de especialidades*/
+    .box-especialidades {
+        flex: 1;
+        min-width: 250px; 
+        text-align: center;
+/*título especialidades*/
+        h2 {
+            font-size: map.get(maps.$tipografias-titulos,tamaño-titulos);
+            margin-bottom: 10px;
+            font-weight: map.get(maps.$tipografias-titulos,tamaño-fuente);
+            color: variables.$negro;
+            }
+/*texto especialidades*/
+        p {
+            color: variables.$negro;
+            font-size: 15px; 
+        }
+/*iconos especialidades*/
+        .box-iconos {
+            width: 60px;
+            height: 60px;
+            font-size: 40px;
+            margin: 0 auto 20px; 
+        }
+    }
+}
+
+/*INDEX-SERVICIOS*/
+/*Cards informaticas*/
+.card {
+    border: none;
+    overflow: hidden;
+
+    .card-img-top {
+        height: 250px; 
+        object-fit: cover;
+        width: 100%; 
+    }
+
+    .card-body {
+        h2 {
+        font-size: map.get(maps.$tipografias-titulos,tamaño-titulos-cards); 
+        }
+    }
+
+    .display-5 {
+        font-size: map.get(maps.$tipografias-titulos,tamaño-titulos-cards);
+    }
+
+&:hover {
+    .card-img-top {
+        transform: scale(1.05);
+    }
+}
+}
+
+/*SECCION PROYECTOS*/
+/*Titulo proyectos*/
+.proyectos .titulo-casa {
+    font-size: map.get(maps.$tipografias-titulos,tamaño-titulos-cards);
+}
+
+/*imagen proyectos*/
+.img-uniforme {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*CONTACTO*/
+/*formulario*/
+.boxcontacto {
+    text-align: center;
+    padding: 20px;
+    background-color: variables.$color-terciario;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,8 @@
+@use "../base/variables";
+
+/*componentes*/
+%efecto-hover-base {
+    transition: all .2s ease;
+    transform: scale(1.03); 
+    box-shadow: 0 5px 5px variables.$negro;
+}
