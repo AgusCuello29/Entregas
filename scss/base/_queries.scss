@@ -6,6 +6,19 @@
 /* Movil */
 @media (max-width: 576px) {
 
+    .boxprincipal {
+        height: 70vh;
+
+        .contenidoprincipal {
+            font-size: 2em;
+            left: 7%;
+
+            .boton-gral {
+                font-size: 20px;
+            }
+        }
+    }
+
     .footer {
         grid-template-columns: 1fr;
         text-align: center;
