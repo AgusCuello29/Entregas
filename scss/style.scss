@@ -1,6 +1,8 @@
 @use "base/variables";
 @use "base/general";
 @use "utilities/mixins";
+@use "utilities/maps";
+@use "utilities/extend";
 @use "componentes/botones";
 @use "sections/header";
 @use "sections/main";
