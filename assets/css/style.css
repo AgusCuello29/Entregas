@@ -115,10 +115,10 @@
 /*fondo principal, se repite en index y proyectos*/
 .boxprincipal {
   position: relative;
-  background-image: url(assets/img/enhanced_45456.png);
+  background-image: url(../img/enhanced_45456.png);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 90vh; 
   /*texto principal, se repite en index y proyectos*/
 }
 .boxprincipal .contenidoprincipal {
