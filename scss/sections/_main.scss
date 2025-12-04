@@ -21,6 +21,14 @@
         color: variables.$blanco;
         text-align: center;
         font-weight: bold;
+
+        p{
+            /* Animacion principal */
+            animation-name: respiracion;
+            animation-duration: 1s; 
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite; 
+        }
     }
 }
 
@@ -109,4 +117,20 @@
     padding: 20px;
     background-color: variables.$color-terciario;
     margin-bottom: 25px;
+}
+
+/*animacion*/
+@keyframes respiracion {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(2); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

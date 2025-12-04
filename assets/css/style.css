@@ -130,6 +130,13 @@
   text-align: center;
   font-weight: bold;
 }
+.boxprincipal .contenidoprincipal p {
+  /* Aplicar la animación al párrafo */
+  animation-name: respiracion;
+  animation-duration: 4s; /* 4 segundos por ciclo */
+  animation-timing-function: ease-in-out; /* Velocidad suave */
+  animation-iteration-count: infinite; /* Repetir infinitamente */
+}
 
 /*INDEX*/
 /*Seccion de especialidades principales*/
@@ -214,6 +221,21 @@
   margin-bottom: 25px;
 }
 
+/*animacion*/
+@keyframes respiracion {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.95; /* Ligeramente más transparente */
+    transform: scale(1.01); /* Ligeramente más grande (la "inhalación") */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 /*seccion footer*/
 .footer {
   font-family: "Montserrat", sans-serif;
