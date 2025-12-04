@@ -131,11 +131,11 @@
   font-weight: bold;
 }
 .boxprincipal .contenidoprincipal p {
-  /* Aplicar la animación al párrafo */
+  /* Animacion principal */
   animation-name: respiracion;
-  animation-duration: 4s; /* 4 segundos por ciclo */
-  animation-timing-function: ease-in-out; /* Velocidad suave */
-  animation-iteration-count: infinite; /* Repetir infinitamente */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 /*INDEX*/
@@ -228,8 +228,8 @@
     transform: scale(1);
   }
   50% {
-    opacity: 0.95; /* Ligeramente más transparente */
-    transform: scale(1.01); /* Ligeramente más grande (la "inhalación") */
+    opacity: 1;
+    transform: scale(1.02);
   }
   100% {
     opacity: 1;
@@ -276,7 +276,7 @@
   }
   .boxprincipal .contenidoprincipal {
     font-size: 2em;
-    left: 7%;
+    left: 6%;
   }
   .boxprincipal .contenidoprincipal .boton-gral {
     font-size: 20px;
@@ -307,6 +307,10 @@
   .card-body {
     text-align: center;
   }
+}
+.cajabotones {
+  justify-items: center;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
